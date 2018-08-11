@@ -1,0 +1,26 @@
+
+Validating Your HTML
+The process of generating HTML pages is a bit abstract. It is easy to assume that everything is perfect, if the right 
+page view is displayed at the right time. If you see the right action, your PHP scripts works perfectly. But that does not 
+mean your HTML is perfectly valid. Dynamic web pages should conform to web standards, just as static HTML pages 
+should. You should validate the generated HTML just as you would normally validate any other HTML. 
+
+You could load a dynamic page in your browser and view the generated HTML source code through your 
+browser. When you see the generated HTML source code, you can select it all, copy it, and paste it into an online HTML 
+validation service. i usually use 
+http://validator.w3.org/#validate_by_input
+
+Styling the Site with CSS
+When the HTML of all page views validates, you can start styling your site with CSS. You do it exactly as you would 
+normally style a static HTML site: create an external style sheet with style rules for the visual design of your site.  
+
+//Concatenation test
+$test ="<p>Hello ";
+$test ="world</p>";
+//first $test value will be ignored
+echo $test;
+$concatenationTest = "<p>Hello ";
+$concatenationTest .= "world</p>";
+echo $concatenationTest;
+//output will be Hello world
+
